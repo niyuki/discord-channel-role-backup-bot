@@ -1,0 +1,20 @@
+{
+    "panel": {
+    "guild": "ServerID",
+    "token": "BOT_TOKEN",
+    "prefix": ".",
+    "mongopath": "mongopath",
+    "devs": ["YOUR_ID"]
+    },
+    "channellist": {
+        "CommandLog": "COMMANDLOG_CHANNEL_ID",
+        "voicechannel": "VOICECHANNEL_ID",
+
+        "logchannel": "BACKUPVOICE_CHANNEL_ID",
+        "developerchannel": "DEVELOPER_CHANNEL_ID"
+    },
+    "embed": {
+        "footer": "Niyuki Was Alone",
+        "color": "F6F6F6"
+    }
+}
