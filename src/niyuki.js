@@ -1,5 +1,5 @@
 const { Collection, Client, Discord } = require('discord.js');
-require('discord-reply'); //⚠️ IMPORTANT: put this before your discord.Client()
+require('discord-reply');
 
 const client = global.client = new Client({
     disableMention: 'everyone'
@@ -250,7 +250,7 @@ function CreateReserveChannel() {
         });
     }
 }
-client.on('ready', () => { //2020 7(12) 12(17) / 2021(1 9) januar
+client.on('ready', () => { 
     const spinner2 = ora(`${client.user.username} is logging in...`).start();
     setTimeout(() => {
         spinner2.succeed(`${client.user.username} has succesfully logged in now.`)
@@ -264,7 +264,7 @@ client.on('ready', () => { //2020 7(12) 12(17) / 2021(1 9) januar
             user.send(`Role and Channel Backup Has Been Updated Now! -> [${moment(Date.now()).format('dddd - MM MMMM LT')}] \n Next Update in ${moment(Date.now()).add(1000 * 60 * 30, 'milliseconds')}`)
         
         });
-    }, 1000 * 60 * 5); //If you change this go to l. 119 & 122 and change the time at the end
+    }, 1000 * 60 * 30); 
 })
 
 
